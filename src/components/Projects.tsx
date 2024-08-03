@@ -2,13 +2,8 @@
 
 import Link from "next/link";
 import React from "react";
-import { projects } from "../../../constants";
-import {
-  CardBody,
-  CardContainer,
-  CardItem,
-  useMouseEnter,
-} from "@/components/ui/3d-card";
+import { projects } from "../../constants";
+import { CardBody, CardContainer, CardItem, useMouseEnter } from "./ui/3d-card";
 import Image from "next/image";
 
 const Projects = () => {

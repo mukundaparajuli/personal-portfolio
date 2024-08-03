@@ -1,4 +1,4 @@
-import HeroComponent from "@/components/hero-component";
+import React from "react";
 
 const HeroSection = () => {
   return (

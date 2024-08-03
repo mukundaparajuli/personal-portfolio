@@ -1,9 +1,9 @@
+import AboutMe from "@/components/AboutMe";
+import Footer from "@/components/Footer";
+import HeroSection from "@/components/HeroComponent";
+import Projects from "@/components/Projects";
+import Skills from "@/components/Skills";
 import Image from "next/image";
-import HeroSection from "./hero/page";
-import AboutMe from "./about-me/page";
-import Projects from "./projects/page";
-import Skills from "./skills/page";
-import Footer from "./footer/page";
 
 export default function Home() {
   return (
