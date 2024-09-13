@@ -1,18 +1,28 @@
-import AboutMe from "@/components/AboutMe";
-import Footer from "@/components/Footer";
-import HeroSection from "@/components/HeroComponent";
-import Projects from "@/components/Projects";
-import Skills from "@/components/Skills";
-import Image from "next/image";
+import { Profile } from '@/components/Intro';
+import { Projects } from '@/components/Projects';
+import { Skills } from '@/components/Skills';
+import { ABeeZee, Galdeano } from 'next/font/google';
+import React from 'react';
 
+const abeezee = ABeeZee({
+  weight: '400',
+  subsets: ['latin']
+})
+const galdeano = Galdeano({
+  weight: '400',
+  subsets: ['latin']
+})
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col p-0">
-      <HeroSection />
-      <AboutMe />
-      <Projects />
-      <Skills />
-      <Footer />
+    <main className={galdeano.className}>
+
+      <div className="min-h-screen flex justify-center item-center bg-gray-800 text-white p-8">
+        <div className='w-1/2'>
+          <Profile />
+          <Projects />
+          <Skills />
+        </div>
+      </div>
     </main>
   );
 }
