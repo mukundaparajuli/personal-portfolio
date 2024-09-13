@@ -1,4 +1,5 @@
-import Link from "next/link"
+import Link from "next/link";
+import { ArrowUpRight } from "./ui/ArrowUpRight"
 
 export function Projects() {
     const arr = [1, 2, 3, 4]
@@ -25,8 +26,10 @@ export function Projects() {
             </div>
 
             {/* View All the projects */}
-            <div className="text-right">
-                <a href="#" className="text-white underline font-bold">View all</a>
+            <div className="text-right justify-center ">
+                <Link href="#" className="text-white font-bold flex items-center justify-center">
+                    <span>View all</span><ArrowUpRight />
+                </Link>
             </div>
         </div>
     )
