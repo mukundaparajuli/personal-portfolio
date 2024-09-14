@@ -7,6 +7,7 @@ interface props {
     icon: React.ReactElement
 }
 interface Skill {
+    id: Number
     category: string,
     properties: props[]
 }
@@ -14,6 +15,7 @@ interface Skill {
 export const Skills: Skill[] = [
 
     {
+        id: 1,
         category: "Programming Languages",
         properties: [
             {
@@ -32,6 +34,7 @@ export const Skills: Skill[] = [
             }]
     },
     {
+        id: 2,
         category: "Frameworks and Libraries",
         properties: [{
             id: 1,
@@ -56,6 +59,7 @@ export const Skills: Skill[] = [
         }]
     },
     {
+        id: 3,
         category: "Databases",
         properties: [
             {

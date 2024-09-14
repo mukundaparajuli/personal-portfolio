@@ -4,6 +4,8 @@ import { Skills } from '@/components/Skills';
 import { NavBar } from '@/components/NavBar'
 import { ABeeZee, Galdeano } from 'next/font/google';
 import React from 'react';
+import { Socials } from '@/components/Socials';
+import { Footer } from '@/components/Footer';
 
 const abeezee = ABeeZee({
   weight: '400',
@@ -23,6 +25,8 @@ export default function Home() {
           <Profile />
           <Projects />
           <Skills />
+          <Socials />
+          <Footer />
         </div>
       </div>
     </main>
