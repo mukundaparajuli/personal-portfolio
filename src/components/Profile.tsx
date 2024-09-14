@@ -3,7 +3,7 @@ import ProfileImage from "@/assets/ProfileImage.jpg"
 
 export function Profile() {
     return (
-        <div className="bg-gray-700 p-6 rounded-lg shadow-lg mb-8 flex items-center">
+        <div className="bg-gray-700 p-6 rounded-lg shadow-lg mb-8 mt-24 flex items-center">
             <Image className="w-32 h-36 bg-gray-700 rounded-md mr-6" src={ProfileImage} alt="Mukunda"></Image>
             <div>
                 <h1 className="text-4xl font-bold">Mukunda Parajuli</h1>

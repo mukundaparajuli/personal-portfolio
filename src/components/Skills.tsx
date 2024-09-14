@@ -3,7 +3,7 @@ import { Skills as SkillsList } from "@/constants/skills"
 export function Skills() {
 
     return (
-        <div className="bg-gray-700 p-6 mt-8 rounded-lg shadow-lg  ">
+        <div className="bg-gray-700 p-6 mt-8 rounded-lg shadow-lg " id="skills">
             <h2 className="text-4xl font-semibold mb-4">Skills</h2>
             <div className="grid grid-cols-1 mb-4 gap-8">{
                 SkillsList.map((skill) => (

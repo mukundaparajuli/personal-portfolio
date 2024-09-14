@@ -6,7 +6,7 @@ import Project from "@/assets/Project.webp"
 export function Projects() {
     const arr = [1, 2, 3, 4]
     return (
-        <div className="bg-gray-700 p-6 rounded-lg shadow-lg ">
+        <div className="bg-gray-700 p-6 rounded-lg shadow-lg mt-8" id="projects">
             <h2 className="text-4xl font-semibold mb-4">Projects</h2>
 
             {/* Main Projects */}
@@ -29,7 +29,7 @@ export function Projects() {
 
             {/* View All the projects */}
             <div className="text-right justify-center ">
-                <Link href="#" className="text-white text-lg font-bold flex items-center justify-center">
+                <Link href="/projects" className="text-white text-lg font-bold flex items-center justify-center">
                     <span>View all</span><ArrowUpRight />
                 </Link>
             </div>

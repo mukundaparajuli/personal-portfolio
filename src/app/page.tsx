@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <main className={galdeano.className}>
 
-      <div className="min-h-screen flex justify-center item-center bg-gray-800 text-white p-8">
+      <div className="min-h-screen flex justify-center item-center bg-gray-800 text-white ">
         <div className='w-3/5'>
           <NavBar />
           <Profile />
