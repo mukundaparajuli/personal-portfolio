@@ -32,7 +32,7 @@ export const Projects: ProjectInterface[] = [
         title: "Youtube Clone",
         description: "A YouTube-like platform using the YouTube API for video searches and viewing. Includes live chat polling and a responsive interface across all devices.",
         githubUrl: "https://github.com/mukundaparajuli/youtube-clone-using-react",
-        url: "",
+        url: "https://youtube-clone-using-react.vercel.app/",
         image: "",
         tech: ["React JS", "MongoDB", "Tailwind CSS", "Youtube API"]
     },

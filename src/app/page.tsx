@@ -20,8 +20,8 @@ export default function Home() {
   return (
     <main className={galdeano.className}>
 
-      <div className="min-h-screen flex justify-center item-center bg-gray-800 text-white bg-fixed">
-        <div className='w-3/5'>
+      <div className="min-h-screen flex justify-center item-center bg-slate-800 text-white bg-fixed">
+        <div className='w-full mx-2 md:w-3/5'>
           <NavBar />
           <Profile />
           <Projects />
