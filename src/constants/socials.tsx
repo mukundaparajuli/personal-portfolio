@@ -1,5 +1,7 @@
-import { FaLinkedin } from "react-icons/fa";
+import { BsMailbox } from "react-icons/bs";
+import { FaLinkedin, FaMailBulk } from "react-icons/fa";
 import { FaFacebook, FaGithub, FaInstagram, FaTwitter } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
 
 interface Social {
     id: number,
@@ -30,7 +32,7 @@ export const Socials: Social[] = [
     },
     {
         id: 4,
-        title: "FaceBook",
+        title: "Facebook",
         url: "https://www.facebook.com/mukunda.parajuli.1232",
         icon: <FaFacebook style={{ fontSize: "40" }} />
     },
@@ -39,5 +41,11 @@ export const Socials: Social[] = [
         title: "Instagram",
         url: "https://instagram.com/mukundaparajuli13",
         icon: <FaInstagram style={{ fontSize: "40" }} />
+    },
+    {
+        id: 6,
+        title: "Gmail",
+        url: "mailto: mukundaparajuli13@gmail.com",
+        icon: <MdEmail style={{ fontSize: "40" }} />
     }
 ]

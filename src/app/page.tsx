@@ -6,6 +6,7 @@ import { ABeeZee, Galdeano } from 'next/font/google';
 import React from 'react';
 import { Socials } from '@/components/Socials';
 import { Footer } from '@/components/Footer';
+import { Blogs } from '@/components/Blogs';
 
 const abeezee = ABeeZee({
   weight: '400',
@@ -19,11 +20,12 @@ export default function Home() {
   return (
     <main className={galdeano.className}>
 
-      <div className="min-h-screen flex justify-center item-center bg-gray-800 text-white ">
+      <div className="min-h-screen flex justify-center item-center bg-gray-800 text-white bg-fixed">
         <div className='w-3/5'>
           <NavBar />
           <Profile />
           <Projects />
+          {/* <Blogs /> */}
           <Skills />
           <Socials />
           <Footer />

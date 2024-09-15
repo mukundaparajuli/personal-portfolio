@@ -1,5 +1,5 @@
 import { FaNode, FaReact } from "react-icons/fa6"
-import { SiC, SiCplusplus, SiExpress, SiJavascript, SiMongodb, SiMysql, SiNextdotjs } from "react-icons/si"
+import { SiC, SiCplusplus, SiExpress, SiGit, SiJavascript, SiMongodb, SiMysql, SiNextdotjs, SiPostman, SiTailwindcss, SiTypescript } from "react-icons/si"
 
 interface props {
     id: Number,
@@ -21,16 +21,20 @@ export const Skills: Skill[] = [
             {
                 id: 6,
                 title: "JavaScript",
-                icon: <SiJavascript style={{ fontSize: "80" }} />
+                icon: <SiJavascript style={{ fontSize: "60" }} />
+            }, {
+                id: 6,
+                title: "TypeScript",
+                icon: <SiTypescript style={{ fontSize: "60" }} />
             }, {
                 id: 7,
                 title: "C++",
-                icon: <SiCplusplus style={{ fontSize: "80" }} />
+                icon: <SiCplusplus style={{ fontSize: "60" }} />
             },
             {
                 id: 8,
                 title: "C",
-                icon: <SiC style={{ fontSize: "80" }} />
+                icon: <SiC style={{ fontSize: "60" }} />
             }]
     },
     {
@@ -38,24 +42,29 @@ export const Skills: Skill[] = [
         category: "Frameworks and Libraries",
         properties: [{
             id: 1,
-            title: "React",
-            icon: <FaReact style={{ fontSize: "80" }} />
+            title: "React JS",
+            icon: <FaReact style={{ fontSize: "60" }} />
         },
         {
             id: 2,
             title: "Node JS",
-            icon: <FaNode style={{ fontSize: "80" }} />
+            icon: <FaNode style={{ fontSize: "60" }} />
         },
         {
             id: 3,
             title: "Express JS",
-            icon: <SiExpress style={{ fontSize: "80" }} />
+            icon: <SiExpress style={{ fontSize: "60" }} />
+        },
+        {
+            id: 4,
+            title: "Tailwind CSS",
+            icon: <SiTailwindcss style={{ fontSize: "60" }} />
         },
 
         {
             id: 5,
             title: "Next JS",
-            icon: <SiNextdotjs style={{ fontSize: "80" }} />
+            icon: <SiNextdotjs style={{ fontSize: "60" }} />
         }]
     },
     {
@@ -65,13 +74,27 @@ export const Skills: Skill[] = [
             {
                 id: 4,
                 title: "MongoDB",
-                icon: <SiMongodb style={{ fontSize: "80" }} />
+                icon: <SiMongodb style={{ fontSize: "60" }} />
             },
             {
                 id: 9,
                 title: "MySql",
-                icon: <SiMysql style={{ fontSize: "80" }} />
+                icon: <SiMysql style={{ fontSize: "60" }} />
             },
+        ]
+    }, {
+        category: "Tools",
+        id: 4,
+        properties: [
+            {
+                id: 1,
+                title: "Git",
+                icon: <SiGit style={{ fontSize: "60" }} />
+            }, {
+                id: 2,
+                title: "PostMan",
+                icon: <SiPostman style={{ fontSize: "60" }} />
+            }
         ]
     }
 ]
