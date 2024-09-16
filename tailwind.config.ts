@@ -26,6 +26,12 @@ module.exports = {
           },
         },
       },
+      colors: {
+        'bg-light': '#F1F5F9',
+        'bg-dark': '#4A5568',
+        'text-light': '#2D3748',
+        'text-dark': '#EDF2F7',
+      },
     },
   },
   plugins: [

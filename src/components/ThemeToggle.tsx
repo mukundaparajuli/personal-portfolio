@@ -13,12 +13,39 @@ export default function ThemeToggle() {
     }, []);
 
     if (!mounted) return null;
+
     return (
         <button
             onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-            className="p-2 dark:bg-gray-800 rounded md:fixed md:right-12 md:top-12"
+            className="p-2 rounded md:fixed md:right-12 md:top-12 border-none flex items-center justify-center"
+            style={{
+                boxShadow: 'none',
+            }}
         >
-            {theme === 'dark' ? <FaSun style={{ fontSize: "32" }} /> : <FaMoon style={{ fontSize: "32" }} />}
+            {theme === 'dark' ? (
+                <FaMoon
+                    style={{
+                        fontSize: '44px',
+                        color: 'white',
+                        boxShadow: '0 0 8px rgba(255, 255, 255, 0.6)',
+                        borderRadius: '32px',
+                        padding: '8px',
+                    }}
+                />
+            ) : (
+                <FaSun
+                    className='bg-white '
+                    style={{
+                        fontSize: '44px',
+                        color: 'black',
+                        boxShadow: '0 0 8px rgba(0, 120, 0, 0.9)',
+                        borderRadius: '32px',
+                        padding: '8px',
+
+                    }}
+                />
+
+            )}
         </button>
     );
 }

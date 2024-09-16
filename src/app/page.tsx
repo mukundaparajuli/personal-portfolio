@@ -21,8 +21,8 @@ const galdeano = Galdeano({
 export default function Home() {
   return (
     <main className={galdeano.className}>
-      <div className="min-h-screen flex justify-center items-center bg-slate-800 text-white bg-fixed">
-        <div className='w-full mx-2 md:w-3/5'>
+      <div className="min-h-screen flex justify-center items-center bg-fixed bg-slate-300 dark:bg-gray-800">
+        <div className='w-full mx-2 md:w-3/5  text-text-light dark:text-text-dark'>
           <div className='hidden md:block'>
             <ThemeToggle />
           </div>
