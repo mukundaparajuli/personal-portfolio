@@ -12,13 +12,14 @@ import {
     FaBars,
     FaTimes,
 } from "react-icons/fa";
+import ThemeToggle from "./ThemeToggle";
 
 export function NavBar() {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
         <div>
-            <div className="invisible md:visible bg-gray-700 bg-opacity-90 p-2 rounded-b-md flex justify-between fixed top-0 center w-3/5 z-50 h-18">
+            <div className="invisible md:visible bg-gray-700 bg-opacity-90 p-2 rounded-b-md flex justify-between fixed top-0 center w-3/5 z-50">
                 <Link href="/" className="flex flex-col justify-around p-2 items-center cursor-pointer group">
                     <FaHome style={{ fontSize: "32px" }} />
                     <div className="text-lg invisible underline group-hover:visible transition-transform duration-200 font-bold">
@@ -60,7 +61,10 @@ export function NavBar() {
             {/* Mobile View */}
             <div className="visible md:invisible flex justify-center items-start m-2 p-2">
                 {!isOpen ? (
-                    <FaBars style={{ fontSize: "32px" }} onClick={() => setIsOpen(true)} />
+                    <div className="flex items-center justify-between w-full">
+                        <FaBars style={{ fontSize: "32px" }} onClick={() => setIsOpen(true)} />
+                        <ThemeToggle />
+                    </div>
                 ) : (
                     <div className="w-full">
                         <div className="text-2xl flex items-center w-full justify-between shadow-xl py-4">

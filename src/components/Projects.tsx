@@ -7,7 +7,7 @@ import { Projects as ProjectList } from "@/constants/projects";
 export function Projects() {
 
     return (
-        <div className="bg-gray-700 p-6 rounded-lg shadow-lg mt-8" id="projects">
+        <div className="bg-gray-700 p-6 rounded-lg shadow-lg mt-8 md:scroll-my-24" id="projects">
             <h2 className="text-3xl md:text-4xl font-semibold mb-4">Projects</h2>
 
             {/* Main Projects */}
@@ -16,17 +16,17 @@ export function Projects() {
                     <div className="p-2 m-2 " key={project.id}>
                         <Image className="w-full h-auto bg-gray-600 mb-4 hover:h-68" src={Project} alt="Project"></Image>
                         <h3 className="text-xl font-bold">{project.title}</h3>
-                        <p className="text-md text-gray-300 mb-2 text-justify h-28">
+                        <p className="text-md text-gray-300 md:mb-2 mb-4 text-justify md:h-24">
                             {project.description}
                         </p>
-                        <div className="flex flex-wrap gap-2 my-4 group">{
+                        <div className="flex flex-wrap gap-1 my-2  group">{
                             project.tech.map((t, index) => (
                                 <span className="font-bold text-sm p-1 cursor-pointer bg-gray-400 text-black rounded-md hover:text-gray-400 hover:bg-black transition-transform duration-5l00" key={index}>{t}</span>
                             ))
                         }</div>
                         <div className="flex justify-between">
-                            <Link href={project.url} className="text-white font-bold underline">Live Link</Link>
-                            <Link href={project.githubUrl} className="text-white font-bold underline">GitHub</Link>
+                            <Link href={project.url} className="text-white font-bold underline text-sm md:text-md">Live Link</Link>
+                            <Link href={project.githubUrl} className="text-white font-bold underline text-sm md:text-md">GitHub</Link>
                         </div>
                     </div>)
                 )}
