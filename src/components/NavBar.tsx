@@ -20,40 +20,40 @@ export function NavBar() {
     return (
         <div>
             {/* Desktop View */}
-            <div className="invisible md:visible bg-bg-light dark:bg-bg-dark bg-opacity-90 p-2 rounded-b-md flex justify-between fixed top-0 center w-3/5 z-50 ">
+            <div className="invisible md:visible bg-bg-light dark:bg-bg-dark bg-opacity-70 p-2 rounded-b-md flex justify-between fixed top-0 center w-3/5 z-50 backdrop-blur">
                 <Link href="/" className="flex flex-col justify-around p-2 items-center cursor-pointer group">
                     <FaHome style={{ fontSize: "32px" }} className="text-gray-800 dark:text-gray-200" />
-                    <div className="text-lg invisible underline group-hover:visible transition-transform duration-200 font-bold dark:text-text-dark text-text-light">
+                    <div className="text-lg  hover:underline group-hover:visible transition-transform duration-200 font-bold dark:text-text-dark text-text-light">
                         Home
                     </div>
                 </Link>
                 <Link href="/#projects" className="flex flex-col justify-around p-2 items-center cursor-pointer group">
                     <FaLaptopCode style={{ fontSize: "32px" }} className="text-gray-800 dark:text-gray-200" />
-                    <div className="text-lg invisible underline group-hover:visible transition-transform duration-200 font-bold dark:text-text-dark text-text-light">
+                    <div className="text-lg  hover:underline group-hover:visible transition-transform duration-200 font-bold dark:text-text-dark text-text-light">
                         Projects
                     </div>
                 </Link>
                 <Link href="/#blogs" className="flex flex-col justify-around p-2 items-center cursor-pointer group">
                     <FaBlog style={{ fontSize: "32px" }} className="text-gray-800 dark:text-gray-200" />
-                    <div className="text-lg invisible underline group-hover:visible transition-transform duration-200 font-bold dark:text-text-dark text-text-light">
+                    <div className="text-lg  hover:underline group-hover:visible transition-transform duration-200 font-bold dark:text-text-dark text-text-light">
                         Blogs
                     </div>
                 </Link>
                 <Link href="/#skills" className="flex flex-col justify-around p-2 items-center cursor-pointer group">
                     <FaLightbulb style={{ fontSize: "32px" }} className="text-gray-800 dark:text-gray-200" />
-                    <div className="text-lg invisible underline group-hover:visible transition-transform duration-200 font-bold dark:text-text-dark text-text-light">
+                    <div className="text-lg  hover:underline group-hover:visible transition-transform duration-200 font-bold dark:text-text-dark text-text-light">
                         Skills
                     </div>
                 </Link>
                 <Link href="/#socials" className="flex flex-col justify-around p-2 items-center cursor-pointer group">
                     <FaTelegram style={{ fontSize: "32px" }} className="text-gray-800 dark:text-gray-200" />
-                    <div className="text-lg invisible underline group-hover:visible transition-transform duration-200 font-bold dark:text-text-dark text-text-light">
+                    <div className="text-lg  hover:underline group-hover:visible transition-transform duration-200 font-bold dark:text-text-dark text-text-light">
                         Socials
                     </div>
                 </Link>
                 <a href="/files/Resume.pdf" download="MukundaResume" className="flex flex-col justify-around p-2 items-center cursor-pointer group">
                     <FaDownload style={{ fontSize: "32px" }} className="text-gray-800 dark:text-gray-200" />
-                    <div className="text-lg invisible underline group-hover:visible transition-transform duration-200 font-bold dark:text-text-dark text-text-light">
+                    <div className="text-lg  hover:underline group-hover:visible transition-transform duration-200 font-bold dark:text-text-dark text-text-light">
                         Resume
                     </div>
                 </a>
@@ -95,7 +95,7 @@ export function NavBar() {
                                 <FaTelegram style={{ fontSize: "32px" }} className="text-gray-800 dark:text-gray-200" />
                                 <div className="text-lg transition-transform duration-200 font-bold dark:text-text-dark text-text-light">Socials</div>
                             </Link>
-                            <a href="/files/Resume.pdf" download="MukundaResume" className="flex justify-around shadow-md p-2 gap-4 w-full items-center cursor-pointer group dark:bg-gray-800 bg-slate-300">
+                            <a href="/files/Resume.pdf" download="Mukunda-Resume" className="flex justify-around shadow-md p-2 gap-4 w-full items-center cursor-pointer group dark:bg-gray-800 bg-slate-300">
                                 <FaDownload style={{ fontSize: "32px" }} className="text-gray-800 dark:text-gray-200" />
                                 <div className="text-lg transition-transform duration-200 font-bold dark:text-text-dark text-text-light">Resume</div>
                             </a>

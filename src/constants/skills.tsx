@@ -1,5 +1,7 @@
+import { DiFirebase } from "react-icons/di"
 import { FaNode, FaReact } from "react-icons/fa6"
-import { SiC, SiCplusplus, SiExpress, SiGit, SiJavascript, SiMongodb, SiMysql, SiNextdotjs, SiPostman, SiTailwindcss, SiTypescript } from "react-icons/si"
+import { IoLogoFirebase } from "react-icons/io5"
+import { SiC, SiCloudinary, SiCplusplus, SiDocker, SiExpress, SiFirebase, SiGit, SiJavascript, SiMongodb, SiMysql, SiNextdotjs, SiPostgresql, SiPostman, SiRedux, SiShadcnui, SiTailwindcss, SiTypescript } from "react-icons/si"
 
 interface props {
     id: Number,
@@ -21,51 +23,61 @@ export const Skills: Skill[] = [
             {
                 id: 6,
                 title: "JavaScript",
-                icon: <SiJavascript style={{ fontSize: "60" }} />
+                icon: <SiJavascript className="text-[40px]" />
             }, {
                 id: 6,
                 title: "TypeScript",
-                icon: <SiTypescript style={{ fontSize: "60" }} />
+                icon: <SiTypescript className="text-[40px]" />
             }, {
                 id: 7,
                 title: "C++",
-                icon: <SiCplusplus style={{ fontSize: "60" }} />
+                icon: <SiCplusplus className="text-[40px]" />
             },
             {
                 id: 8,
                 title: "C",
-                icon: <SiC style={{ fontSize: "60" }} />
+                icon: <SiC className="text-[40px]" />
             }]
     },
     {
         id: 2,
-        category: "Frameworks and Libraries",
+        category: "Frontend Technologies",
         properties: [{
             id: 1,
             title: "React JS",
-            icon: <FaReact style={{ fontSize: "60" }} />
+            icon: <FaReact className="text-[40px]" />
         },
-        {
-            id: 2,
-            title: "Node JS",
-            icon: <FaNode style={{ fontSize: "60" }} />
-        },
-        {
-            id: 3,
-            title: "Express JS",
-            icon: <SiExpress style={{ fontSize: "60" }} />
-        },
-        {
-            id: 4,
-            title: "Tailwind CSS",
-            icon: <SiTailwindcss style={{ fontSize: "60" }} />
-        },
-
         {
             id: 5,
             title: "Next JS",
-            icon: <SiNextdotjs style={{ fontSize: "60" }} />
+            icon: <SiNextdotjs className="text-[40px]" />
+        },
+        {
+            id: 6,
+            title: "Redux Toolkit",
+            icon: <SiRedux className="text-[40px]" />
+        }, {
+            id: 4,
+            title: "Tailwind CSS",
+            icon: <SiTailwindcss className="text-[40px]" />
         }]
+    },
+
+    {
+        id: 5,
+        category: "Backend Technologies",
+        properties: [
+            {
+                id: 2,
+                title: "Node JS",
+                icon: <FaNode className="text-[40px]" />
+            },
+            {
+                id: 3,
+                title: "Express JS",
+                icon: <SiExpress className="text-[40px]" />
+            },
+        ]
     },
     {
         id: 3,
@@ -74,26 +86,40 @@ export const Skills: Skill[] = [
             {
                 id: 4,
                 title: "MongoDB",
-                icon: <SiMongodb style={{ fontSize: "60" }} />
+                icon: <SiMongodb className="text-[40px]" />
             },
             {
                 id: 9,
                 title: "MySql",
-                icon: <SiMysql style={{ fontSize: "60" }} />
+                icon: <SiMysql className="text-[40px]" />
             },
+            {
+                id: 10,
+                title: "PostgreSQL",
+                icon: <SiPostgresql className="text-[40px]" />
+            }
         ]
-    }, {
+    },
+    {
         category: "Tools",
         id: 4,
         properties: [
             {
                 id: 1,
                 title: "Git",
-                icon: <SiGit style={{ fontSize: "60" }} />
+                icon: <SiGit className="text-[40px]" />
             }, {
                 id: 2,
                 title: "PostMan",
-                icon: <SiPostman style={{ fontSize: "60" }} />
+                icon: <SiPostman className="text-[40px]" />
+            }, {
+                id: 3,
+                title: "FireBase",
+                icon: <IoLogoFirebase className="text-[40px]" />
+            }, {
+                id: 4,
+                title: "Docker",
+                icon: <SiDocker className="text-[40px]" />
             }
         ]
     }

@@ -21,7 +21,7 @@ export function Projects() {
                         </p>
                         <div className="flex flex-wrap gap-1 my-2  group">{
                             project.tech.map((t, index) => (
-                                <span className="font-bold text-sm p-1 cursor-pointer bg-gray-400 text-black rounded-md hover:text-gray-400 hover:bg-black transition-transform duration-5l00" key={index}>{t}</span>
+                                <span className="font-bold text-sm p-1 cursor-pointer bg-gray-700 text-white  dark:bg-gray-400 dark:text-black rounded-md hover:text-gray-400 dark:hover:text-gray-700 dark:hover:bg-white hover:bg-black transition-transform duration-5l00" key={index}>{t}</span>
                             ))
                         }</div>
                         <div className="flex justify-between">
